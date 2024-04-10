@@ -1,0 +1,203 @@
+Project Name:,login,,,,,,,
+Module Name:,login page module,,,,,,,
+Created By: ,poojan dhorajiya,,,,,,,
+Created Date:,14/02/2024,,,,,,,
+Executed By:,poojan dhorajiya,,,,,,,
+Executed Date:,14/02/2024,,,,,,,
+,,,,,,,,
+Test Case ID,objective,description/steps,Test Data,Priority,Expected Result,Actual Result,Status,Comment
+TC_001,To validate that logo is visible,"1.Redirect to the web page
+2.validate logo is visible",1. URL: www.loginpage.com,p1,Logo should be visible,,,
+TC_002,To valiidate the username edit field should be only accept alphabets,"1.Redirect to the web page
+2.Write alphabets in username edit field and password blank","1. URL: www.loginpage.com
+2. username : admin
+    password : ",p2,username edit field only accept alphabets,,,
+TC_003,"To validate password edit field should at least 8 characters long and include a mix of letters, numbers, and special characters","1.Redirect to the web page
+2.Write password at least 8 characters long and include a mix of letters, numbers, and special characters, pass username as blank","1. URL: www.loginpage.com
+2.  username : 
+     password: Abcd@1234",p2,"password edit field is 8 characters long and include a mix of letters, numbers, and special characters",,,
+TC_004,To validate login button should enable only when successful data should be entered  ,"1.Redirect to the web page
+2.pass valid username and password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : Abcd@1234",p2,"After entering the correct username and password, the login button becomes active.",,,
+TC_005 ,To verify that with the invalid username and invalid password,"1.Redirect to the web page
+2.Write invalid username & invalid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : 1234
+3. password : 1234",p2,with invalid username and pasword login should not work,,,
+TC_006,To verify that with the invalid username and valid password,"1.Redirect to the web page
+2.Write invalid username & valid password 
+3. click on login button","1. URL: www.loginpage.com
+2. username : 1234
+3. password : Abcd@1234",p2,with invalid username and valid password login should not work (it shows error for invalid username),,,
+TC_007,To verify that with the valid username and invalid password,"1.Redirect to the web page
+2.Write valid password & invalid username
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : 1234",p2,"with valid username and invalid password, login should not work it shows error for invalid password",,,
+TC_008,To verify that with the valid username and valid password,"1.Redirect to the web page
+2.Write valid username & valid password 
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : Abcd@1234",p2,"with valid user and valid passwrod , login should work",,,
+TC_009,To verify that with the blank user and blank password,"1.Redirect to the web page
+2. no username and no password
+3. click on login button","1. URL: www.loginpage.com
+2. username : 
+3. password : ",p2,with no password and no username login should not work,,,
+TC_010,To verify that with the valid username and blank password,"1.Redirect to the web page
+2.Write valid username & password blank
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : ",p2,"with valid username and blank password, login should not work",,,
+TC_011,To verify that with the blank username and valid password,"1.Redirect to the web page
+2.Write blank username and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : 
+3. password : Abcd@1234",p2,"with blank username and  valid password,login should not work ",,,
+TC_012,To varify that with Special carecter-only username and valid password,"1.Redirect to the web page
+2. enter special carecter as username and valid password 
+3. click on login button","1. URL: www.loginpage.com
+2. username : !@#$@
+3. password : Abcd@1234",p3,"with special carecter-only username and valid password , login should not work",,,
+TC_013,To varify that with valid username and Special carecter-only password,"1.Redirect to the web page
+2.enter valid username and special carecter-only as password 
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : !@$#@",p3,"with vlid username and special carecter-only password, login should not work",,,
+TC_014,To varify that with  Special carecter-only username and Special carecter-only password,"1.Redirect to the web page
+2.enter special carecter as username and special carecter as password
+3. click on login button","1. URL: www.loginpage.com
+2. username : !@$@$!#!%
+3. password : !@$#@",p3,"with special carecter-only username and special carecter only password , login should not work",,,
+TC_015,To varify that with  username that contains only numbers and valid password,"1.Redirect to the web page
+2.enter only numbers as username and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : 123455
+3. password : Abcd@1234",p2,"with username as only number and valid password, login should not work",,,
+TC_016,To varify that with valid  username and a password  that contains only numbers,"1.Redirect to the web page
+2.enter valid username and  only numbers as password 
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : 123455",p2,"with valid username and password as only number, login should not work",,,
+TC_017,To varify that with username that contains only numbers and a password that contains only numbers,"1.Redirect to the web page
+2.enter only numbers as username and password as only numbers
+3. click on login button","1. URL: www.loginpage.com
+2. username : 123455
+3. password :  123456",p2,"with username as only number and password as only numbers, login should not work",,,
+TC_018,To varify that with username that contains a mix of alphanumeric charecters and a password that contain a mix of alphanumeric charecter,"1.Redirect to the web page
+2.enter username that contains a mix of alphanumeric and password contains a mix of alphanumeric
+3. click on login button","1. URL: www.loginpage.com
+2. username : abc123
+3. password :  abc123",p2,"with username as that contains a mix of alphanumeric charecters and password that contains a mix of alphanumeric charecters, login should not work",,,
+TC_019,To varify that with username that contain uppercase and lowercase letters and valid password,"1.Redirect to the web page
+2.enter username as uppercase and lowercase letters and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : Poojan
+3. password : abcd@1234",p2,"with username as uppercase and lower case letters and valid password, login should work",,,
+TC_020,To varify that with valid username and password that contain uppercase  and lowercase letters,"1.Redirect to the web page
+2.enter username valid and password as uppercase and lowercase letters
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password : Poojan",p2,"with valid username  and password as uppercase and lower case letters, login should not work",,,
+TC_021,To varify that with username that contain uppercase and lowercase letters and password  that contain uppercase and lowercase letters,"1.Redirect to the web page
+2.enter username as uppercase and lowercase letters and password as uppercase and lowercase letters
+3. click on login button","1. URL: www.loginpage.com
+2. username : Poojan
+3. password :  Poojan",p2,"with username as uppercase and lower case letters and password  as uppercase and lower case letters, login should not work",,,
+TC_022,To varify that with long username(over 30 charecters) and a valid password,"1.Redirect to the web page
+2.enter username long (over 30 charecters) and and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : pojandgsjhdjhdjhdjgdjdhdhdhdhdh
+3. password :  Abcd@1234",p2,"with long username (over 30 charecters) and valid password, login should not work",,,
+TC_023,To varify that with valid username and long password (over 30 charecters),"1.Redirect to the web page
+2.enter valid username and password long (over 30 charecters)
+3. click on login button","1. URL: www.loginpage.com
+2. username : Poojan
+3. password :  Abcd@1234123edfgrtvbhfdscderty",p2,"with valid username and password as long (over 30 charecters), login should not work",,,
+TC_024,To varify that with long username(over 30 charecters) and long password (over 30 charecters),"1.Redirect to the web page
+2.enter  long (over 30 charecters) username and password long (over 30 charecters)
+3. click on login button","1. URL: www.loginpage.com
+2. username : pojandgsjhdjhdjhdjgdjdhdhdhdhdh
+3. password :  Abcd@1234123edfgrtvbhfdscderty",p2,"with  long (over 30 charecters) username and password as long (over 30 charecters), login should not work",,,
+TC_025,To varify that with username that contains space and valid password,"1.Redirect to the web page
+2.enter username that contain spaces and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poo jan
+3. password :  Abcd@1234",p2,"with username that contains space and valid password, login should not work",,,
+TC_026,To varify that with valid username and password that contains space,"1.Redirect to the web page
+2.enter valid username and password that contain spaces
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  Abcd@ 1234",p2,"with valid username and password  that contains space , login should not work",,,
+TC_027,To varify that with username that contains space and password that contains space,"1.Redirect to the web page
+2. enter username that contain spaces and password that contain spaces
+3. click on login button","1. URL: www.loginpage.com
+2. username : pooj an
+3. password :  Abcd@ 1234",p2,"with username that contains space  and password that contains space, login should not work",,,
+TC_028,"To varify that with username that contains international charecters (eg. accents, umlauts) and valid password","1.Redirect to the web page
+2. enter username that contain international charecters (eg. accents, umlauts) and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : Ää Öö Üü
+3. password :  Abcd@ 1234",p2,"with username that contains international charecters and valid password, login should work",,,
+TC_029,"To varify that with valid username and password that contains international charecters (eg. accents, umlauts) ","1.Redirect to the web page
+2.enter valid username and password that contain international charecters (eg. accents, umlauts)
+3. click on login button","1. URL: www.loginpage.com
+2. username : pooj an
+3. password : Ää Öö Üü",p2,"with valid username and password that  that contains international charecters, login should work",,,
+TC_030,"To varify that with username  that contains international charecters (eg. accents, umlauts) and password that contains international charecters (eg. accents, umlauts) ","1.Redirect to the web page
+2.enter username that contain international charecters (eg. accents, umlauts) and password that contain international charecters (eg. accents, umlauts)
+3. click on login button","1. URL: www.loginpage.com
+2. username : Ää Öö Üü
+3. password : Ää Öö Üü",p2,"with username that contains international charecters and password that contains international charecters, login should work",,,
+TC_031,To varify that with username that has been previously registered and a valid password,"1.Redirect to the web page
+2.enter username that has been previously registered and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  Abcd@1234",p2,"with username that has been previously registered and valid password, login should work",,,
+TC_032,To varify that with username that has not been previously registered and a valid password,"1.Redirect to the web page
+2.enter username that has not been previously registered and valid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan20
+3. password :  Abcd@1234",p2,"with username that has not been previously registered and valid password , login should not work",,,
+TC_033,To varify that with username that has been previously registered and an invalid password,"1.Redirect to the web page
+2.enter username that has been previously registered and  an invalid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  12345678",p2,"with username that has been previously registered and an invalid password, login should not work",,,
+TC_034,To varify that with username that has not been previously registered and an invalid password,"1.Redirect to the web page
+2.enter username that has not been previously registered and  an invalid password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan20
+3. password :  12345678",p2,"with username that has not been previously registered and an invalid password, login should not work",,,
+TC_035,To varify that with username that has been previously registered and blank password,"1.Redirect to the web page
+2.enter username that has been previously registered and blank password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  ",p2,"with username that has been previously registered and blank password , login should not work",,,
+TC_036,To varify that with username that has not been previously registered and blank password,"1.Redirect to the web page
+2.enter username that has not been previously registered and blank password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan20
+3. password :  ",p2,"with username that has not been previously registered and blank password , login should not work",,,
+TC_037,To varify that with username that has been previously registered and special charecters-only password,"1.Redirect to the web page
+2.enter username that has been previously registered and special charecter-only password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  !@#$@$!@#",p2,"with username that has been previously registered and special charecter-only password, login should not work",,,
+TC_038,To varify that with username that has not been previously registered and special charecters-only password,"1.Redirect to the web page
+2.enter username that has not been previously registered and special charecter-only password
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan20
+3. password :  !@#$@$!@#",p2,"with username that has not been previously registered and special charecter-only password, login should not work",,,
+TC_039,To varify that with username that has been previously registered and password that contains only numbers ,"1.Redirect to the web page
+2.enter username that has been previously registered and password that contain only numbers
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan
+3. password :  1232412421",p2,"with username that has been previously registered and password that contains only number, login should not work",,,
+TC_040,To varify that with username that has not been previously registered and password that contains only numbers ,"1.Redirect to the web page
+2.enter username that has not been previously registered and password that contain only numbers
+3. click on login button","1. URL: www.loginpage.com
+2. username : poojan20
+3. password :  1232412421",p2,"with username that has not been previously registered and password that contains only number, login should not work",,,
